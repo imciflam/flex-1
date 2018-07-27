@@ -1,0 +1,495 @@
+@font-face {
+  font-family: "Roboto medium";
+  src:  url('fonts/robotomedium.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Roboto";
+  src:  url('fonts/roboto.woff2') format('woff2');
+}
+
+
+.visually-hidden 
+{
+	position:absolute;
+	width:1px;
+	height:1px;
+	margin:-1px;
+	border:0;
+	padding:0;
+	clip:rect(0 0 0 0);
+	overflow:hidden;
+}
+
+body
+{
+	padding-left:140px;
+	padding-right:140px;
+	min-width: 1122px;
+	min-height:1750px;
+   font-family: "Roboto medium", Arial, sans-serif;
+   background-color: #eeeeee;
+
+}
+.container div
+
+{
+background-color: #eeeeee;	
+}
+
+main,
+footer
+{
+	background-color: #ffffff;
+}
+a
+{
+  text-decoration: none;
+  font: inherit;
+  text-transform: uppercase;
+  color:black;
+}
+ 
+p
+{
+	font-family: "Roboto medium", Arial, sans-serif;
+	color:#5d6367;
+	font-size:16px;
+}
+
+.column h2
+{
+	margin:0;
+	padding:0;
+	font-family: "Roboto medium", Arial, sans-serif;
+	font-size:55px;
+}
+
+.readbutton
+{
+	font: inherit;
+	background-color:#fb565a;
+	color:#ffffff;
+	 text-align:center;
+     text-transform: uppercase;
+	padding-left:55px;
+	padding-right:55px;
+	padding-top:18px;
+	padding-bottom: 18px;
+	border-radius: 4px;
+}
+
+li
+{
+
+  list-style: none;
+}
+
+.order
+{
+	font: inherit;
+	background-color:#fb565a;
+	color:#ffffff;
+	 text-align:center;
+     text-transform: uppercase;
+     padding-left:39px;
+	padding-right:39px;
+	padding-top:18px;
+	padding-bottom: 18px;
+	border-radius: 4px;
+}
+
+.services-list li:nth-child(2) a
+{
+
+	background-color:#00ca74;
+}
+
+.services-list li:nth-child(3) a
+{
+
+	background-color:#efc84a;
+}
+
+.brands li:hover img
+{
+	opacity: 0.9;
+}
+
+.brands li:active img
+{
+	opacity: 0.1;
+}
+.brands li>img
+{
+	opacity: 0.3;
+}
+
+ 
+b
+{ 
+	font-size:36px;
+}
+
+h3
+{
+	font-size:24px;
+	text-transform: uppercase;
+}
+h5
+{ 
+	font-size:16px;
+	text-transform: uppercase;
+}
+p>b
+{
+	color:black;
+	text-align: center;
+}
+
+.main-header
+{
+	min-height:115px;
+	margin-top:50px;  
+}
+.main-navigation
+{
+  display:flex;
+  justify-content: space-between;
+}
+.site-navigation
+{
+	min-width: 442px;
+}
+.main-navigation a:hover
+{
+  color:#fb565a;
+}
+.main-navigation a:active
+{
+  color:#a6a6a6;
+}
+.main-header-logo
+{
+	width:160px;
+	height:65px;
+}
+
+nav img:hover
+{
+	opacity:0.7;
+}
+
+nav img:active
+{
+	opacity:0.3;
+}
+ 
+.site-navigation  li:first-child  
+{
+  border-bottom: 2px solid #fb565a;
+  margin-right:1245px;
+}
+ 
+.under-header
+{
+	background-color: #eeeeee;
+	display: flex;
+	justify-content: space-between;
+}
+.under-header .column:first-child
+{ 
+	margin-top:70px;
+	padding-bottom:70px;
+	min-width:380px;
+	min-height:270px;
+}
+.under-header .column:last-child
+{
+	margin-left:50px;
+	width: 760px;
+	height:431px;
+}
+
+.column
+{
+	min-height:273px;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.column p
+{
+	margin:0;
+	padding:0;
+}
+
+ 
+.readbutton
+{
+
+	width: 200px;
+}
+
+.order
+{
+	display: inline-block;
+	width:160px; 
+}
+
+.readbutton:hover,
+.order:hover
+{
+background-color: #e74246;
+}
+.readbutton:active,
+.order:active
+{
+background-color: #d7373b;
+color:#e37376;
+}
+.services
+{
+	padding: 140px 80px; 
+	height:510px;
+	padding-bottom:0px;
+}
+
+.services-list
+{ 
+	margin:0;
+	padding:0;
+	display: flex; 
+	justify-content: space-between;
+
+}
+
+.service-item
+{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.statistics
+{
+	padding: 0 80px; 
+}
+
+
+
+.services-list li:nth-child(2) a:hover
+{
+	background-color:#00bc6c;
+}
+.services-list li:nth-child(2) a:active
+{
+	padding-top:3px solid #009958;
+	color:#38bd84;
+	background-color:#00aa62;
+}
+
+.services-list li:nth-child(3) a:hover
+{
+	background-color:#eab534;
+}
+.services-list li:nth-child(3) a:active
+{
+	padding-top:3px solid #ce961f;
+	background-color:#e5a722;
+	color:#edc265;
+}
+
+.social-button img:hover
+{ 
+    filter: opacity(.5) drop-shadow(0 0 0 red);
+}
+.social-button img:active
+{
+    filter: opacity(.3) drop-shadow(0 0 0 red); 
+}
+
+.statistics .stat-column
+{
+	background-color:#ffffff;
+}
+
+.statistics
+{
+	display: flex;
+	justify-content: space-around;  
+}
+
+
+.statistics .stat-column:last-child
+{ 
+	margin-top:-50px;
+	background-color:#ffffff;
+}
+
+.brands
+{
+	display: flex;
+	justify-content: space-around; 	
+}
+
+.map img
+{
+	background-size: 75%;
+}
+
+.footer-social
+{
+	padding: 65px 0;
+}
+
+.footer-social>ul
+{
+	display: flex;
+}
+
+.footer-social li
+{
+	padding-right:15px;
+}
+
+.footer-columns
+{
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-around; 
+	align-items: center;
+}
+
+
+.fknmap
+{
+	margin-right:-300px;
+}
+
+
+
+
+
+
+
+
+
+.inner-page body
+{
+	background-color: #ffffff;
+}
+
+.inner-page .site-navigation  li:first-child  
+{
+  border-bottom: 0px solid #fb565a;
+  margin-right:1245px;
+}
+.inner-page .site-navigation  li:nth-child(3)  
+{
+  border-bottom: 2px solid #fb565a;
+  margin-right:1380px;
+}
+fieldset
+{
+	border:0;
+}
+.inner-page footer
+{
+	background-color: #ffffff;
+}
+ 
+
+ .filter-input-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.filter-input-radio + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+.filter-input-radio + label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #b8b8b8;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.filter-input-radio + label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b8b8b8;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: .2s;
+}
+.filter-input-radio:checked + label:after {
+  opacity: 1;
+}
+ 
+
+.filter-input-radio:hover + label:before
+{ 
+  border: 2px solid #4d4d4d;
+}
+
+.filter-input-radio:hover + label:after
+{ 
+ background: #4d4d4d;
+}
+
+.inner-page .sort-button
+{
+	color:#b2b2b2;
+}
+.sort-button:hover
+{
+	color:#666666;
+}
+.sort-button:active
+{
+	color:#000000;
+}
+
+
+.inner-page .sort-button img:hover
+{
+	opacity:0.7;
+}
+.inner-page .sort-button img:active
+{
+	opacity:0.3;
+}
+.pagination-item a
+{
+	border-radius: 2px;
+	padding:10px;
+	background-color:#cccccc;
+}
+
+.pagination-item a:hover
+{
+	padding:10px;
+	background-color:#dfdfdf;
+}
+
+.pagination-item a:active
+{
+	padding:10px;
+	border-top:1px solid #bfbfbf;
+	background-color:#d5d5d5;
+}
