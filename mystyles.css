@@ -21,26 +21,23 @@
 }
 
 body
-{
-	padding-left:140px;
-	padding-right:140px;
+{ 
 	min-width: 1122px;
 	min-height:1750px;
    font-family: "Roboto medium", Arial, sans-serif;
-   background-color: #eeeeee;
+   background-color: #ffffff;
 
 }
-.container div
-
+.container div 
 {
 background-color: #eeeeee;	
 }
-
-main,
-footer
+.container
 {
-	background-color: #ffffff;
+	padding: 0;
+	margin:0;
 }
+ 
 a
 {
   text-decoration: none;
@@ -54,6 +51,7 @@ p
 	font-family: "Roboto medium", Arial, sans-serif;
 	color:#5d6367;
 	font-size:16px;
+	line-height:20px;
 }
 
 .column h2
@@ -149,17 +147,35 @@ p>b
 .main-header
 {
 	min-height:115px;
-	margin-top:50px;  
+	padding-top:50px;  
+	padding-left: 140px;
+	padding-right: 140px; 
+	background-color: #eeeeee;
 }
 .main-navigation
 {
   display:flex;
   justify-content: space-between;
+  align-items: center;
 }
 .site-navigation
-{
-	min-width: 442px;
+{ 
+  display: flex;
+  flex-wrap: wrap;
+  width:520px;
+  margin:0;
+  padding:0;
+  list-style:none; 
 }
+
+.main-navigation a,
+.user-navigation a
+{
+	padding-left:22px;
+	padding-right: 22px;
+}
+
+
 .main-navigation a:hover
 {
   color:#fb565a;
@@ -172,6 +188,7 @@ p>b
 {
 	width:160px;
 	height:65px;
+	margin-top:-20px;
 }
 
 nav img:hover
@@ -184,10 +201,45 @@ nav img:active
 	opacity:0.3;
 }
  
-.site-navigation  li:first-child  
+ .user-navigation .login-link
+ {
+ 	position: relative;
+ 	padding-left: 50px;
+
+ }
+ .login-link::before
+ {
+ 	position: absolute;
+ 	top:0px;
+ 	left:25px;
+ 	content: "";
+ 	width: 19px;
+ 	height: 19px;
+ 	background-image: url("img/cart-icon.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+ 	opacity: 0.3;
+ }
+
+ .login-link:hover::before,
+ .login-link:active::before,
+ .login-link:focus::before
+ {
+ 	opacity: 1;
+ }
+
+hr
 {
-  border-bottom: 2px solid #fb565a;
-  margin-right:1245px;
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+.somebrands hr
+{ 
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 60px;
+	opacity: 0.2; 
 }
  
 .under-header
@@ -195,6 +247,9 @@ nav img:active
 	background-color: #eeeeee;
 	display: flex;
 	justify-content: space-between;
+
+	padding-left: 140px;
+	padding-right: 140px;
 }
 .under-header .column:first-child
 { 
@@ -250,9 +305,12 @@ color:#e37376;
 }
 .services
 {
-	padding: 140px 80px; 
-	height:510px;
-	padding-bottom:0px;
+	margin:0;
+	padding: 80px 0; 
+	height:510px;  
+	padding-left: 140px;
+	padding-right: 140px;
+	padding-bottom: 0;
 }
 
 .services-list
@@ -317,6 +375,12 @@ color:#e37376;
 
 .statistics
 {
+	margin: 0;
+    padding: 80px 0; 
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 0;
+    padding-top: 0;
 	display: flex;
 	justify-content: space-around;  
 }
@@ -327,10 +391,30 @@ color:#e37376;
 	margin-top:-50px;
 	background-color:#ffffff;
 }
+.somebrands
+{
 
+    margin: 0; 
+    padding-left: 140px;
+    padding-right: 140px; 
+ 
+}
+ 
+.services-list-long-markers
+{
+	margin:0;
+	padding:0;
+}
+.tiret
+{
+	padding-right:10px;
+	color:#fb565a;
+	font-weight: bolder;
+}
 .brands
 {
 	display: flex;
+	align-items: center;
 	justify-content: space-around; 	
 }
 
@@ -361,17 +445,6 @@ color:#e37376;
 	justify-content: space-around; 
 	align-items: center;
 }
-
-
-.fknmap
-{
-	margin-right:-300px;
-}
-
-
-
-
-
 
 
 
