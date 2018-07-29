@@ -244,10 +244,21 @@ p>b
 	padding:0;
 }
   
-.readbutton
+
+hr
 {
- 	width: 200px;
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 60px;
 }
+.somebrands hr
+{ 
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 60px;
+	opacity: 0.2; 
+}
+ 
  .order
 {
 	display: inline-block;
