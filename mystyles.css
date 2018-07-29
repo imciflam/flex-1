@@ -126,20 +126,40 @@ p>b
 	color:black;
 	text-align: center;
 }
- .main-header
+
+
+.main-header
 {
 	min-height:115px;
-	margin-top:50px;  
+	padding-top:50px;  
+	padding-left: 10%;
+	padding-right: 10%; 
+	background-color: #eeeeee;
 }
 .main-navigation
 {
   display:flex;
   justify-content: space-between;
+  align-items: center;
 }
 .site-navigation
-{
-	min-width: 442px;
+{ 
+  display: flex;
+  flex-wrap: wrap;
+  width:520px;
+  margin:0;
+  padding:0;
+  list-style:none; 
 }
+
+.main-navigation a,
+.user-navigation a
+{
+	padding-left:22px;
+	padding-right: 22px;
+}
+
+
 .main-navigation a:hover
 {
   color:#fb565a;
@@ -152,7 +172,36 @@ p>b
 {
 	width:160px;
 	height:65px;
+	margin-top:-20px;
 }
+
+.user-navigation .login-link
+ {
+ 	position: relative;
+ 	padding-left: 50px;
+
+ }
+ .login-link::before
+ {
+ 	position: absolute;
+ 	top:0px;
+ 	left:25px;
+ 	content: "";
+ 	width: 19px;
+ 	height: 19px;
+ 	background-image: url("img/cart-icon.svg");
+ 	background-repeat: no-repeat;
+ 	background-position: 0 0;
+ 	opacity: 0.3;
+ }
+
+ .login-link:hover::before,
+ .login-link:active::before,
+ .login-link:focus::before
+ {
+ 	opacity: 1;
+ }
+
  nav img:hover
 {
 	opacity:0.7;
@@ -162,11 +211,6 @@ p>b
 	opacity:0.3;
 }
  
-.site-navigation  li:first-child  
-{
-  border-bottom: 2px solid #fb565a;
-  margin-right:1245px;
-}
  
 .under-header
 {
