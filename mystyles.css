@@ -243,7 +243,18 @@ p>b
 	margin:0;
 	padding:0;
 }
-  
+   
+.services-list-long-markers
+{
+	margin:0;
+	padding:0;
+}
+.tiret
+{
+	padding-right:10px;
+	color:#fb565a;
+	font-weight: bolder;
+}
 
 hr
 {
